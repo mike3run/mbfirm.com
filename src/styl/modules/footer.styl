@@ -28,7 +28,6 @@
     right px(40)
     background-color: blue
     border-top 1px solid rgba(white,0.2)
-    border-bottom 1px solid rgba(white,0.2)
     
 .footer__social-list
     float left
@@ -43,8 +42,7 @@
         transition background-color 0.2s ease
         &:hover
             border-bottom none
-            background-color white
-            
+            background-color darken(blue,20%)
         &:last-of-type
             border-right 1px solid rgba(white,0.2)
         svg
@@ -64,9 +62,11 @@
             border-bottom none
     a
         border-right 0.1rem solid white
+        &:hover
+            color red
 
 
-+above(1024px)
++above(1025px)
     .footer__social-list,
     .footer__subnav
         .container
@@ -84,56 +84,45 @@
         > .container
             max-width 100%
             padding 0
+            
     .footer__social-list,
     .footer__subnav
         float: none
         padding-left 0
-
+        text-align center
+        
     .footer__subnav
         // display none
-        border-bottom 1px solid gray
         padding 2rem 0
         a, span
             color gray
         a
-            &:hover
-                color darkgray
+            fs(1.6rem)
             &:first-of-type
                 padding-left 0
+            &:last-of-type
+                border-right 0px solid rgba(white,0)
         span
-            align(vertical)
             position: absolute
             right 0
-
-    .footer__social-list,
-    .footer__subnav
-        text-align center
-    .footer__social-list
-        a
-            float none
-            display inline-block
-            border-left 0px solid rgba(white,0)
-            &:last-of-type
-                border-right 0px solid rgba(white,0)
-    .footer__subnav
-        a
-            fs(1.6rem)
-            &:last-of-type
-                border-right 0px solid rgba(white,0)
-        span
             display block
             padding 2rem 0 0 0
             position: static
             transform none
-     
-        
 
-+below(540px)
     .footer__social-list
         .container
             padding 0
+            max-width 320px
         a
+            float none
+            display inline-block
+            border-left 0px solid rgba(white,0)
             width 25%
+            &:last-of-type
+                border-right 0px solid rgba(white,0)
+            
++below(768px)
     .footer__subnav
         a
             display block
@@ -141,6 +130,3 @@
             border-right 0px solid rgba(white,0)
             &:first-of-type
                 padding-top 0
-
-.footer--section
-    padding-bottom 6rem
