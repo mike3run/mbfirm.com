@@ -1,14 +1,13 @@
 a
-	reset-link()
 	cursor pointer
 	text-decoration none
 	transition all 0.1s ease
+	color red
 	&:focus
 		outline: 0
-	&:link
-		color red
 	&:hover
 		color darken(red,40%)
+		text-decoration none
 	&:active
 		color red
 		transform scale(0.99)
@@ -17,4 +16,6 @@ a
 		color gray !important
 		transform scale(1) !important
 	&:visited
-		color red
+		color lighten(red,20%)
+		&:hover
+			color darken(red,40%)

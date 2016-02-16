@@ -11,7 +11,7 @@
                         .row
                             each val, index in [{name: 'linkedin'},{name: 'twitter'},{name: 'facebook'}]
                                 a.footer__social-list-link(href="")
-                                    svg(viewbox='0 0 100 100')
+                                    svg.footer__social-list-icon(viewbox='0 0 100 100')
                                         use(xlink:href='#icon-#{val.name}')
                 .footer__subnav
                     .container
@@ -32,7 +32,7 @@
 .footer__social-list
     float left
     
-a.footer__social-list-link
+.footer__social-list-link
     display block
     float left
     size 5.2rem
@@ -44,17 +44,19 @@ a.footer__social-list-link
     &:hover
         border-bottom none
         background-color darken(blue,20%)
+        color white
     &:last-of-type
         border-right 1px solid rgba(white,0.2)
-    svg
-        size 3rem
-        align()
+
+.footer__social-list-icon
+    size 3rem
+    align()
 
 .footer__subnav
     float: left
     color white
 
-a.footer__subnav-link,
+.footer__subnav-link,
 .footer__subnav-nonlink
     display inline-block
     padding 0 1.2rem
@@ -64,11 +66,10 @@ a.footer__subnav-link,
     &:hover
         border-bottom none
         
-a.footer__subnav-link
+.footer__subnav-link
     border-right 0.1rem solid white
     &:hover
         color red
-
 
 +above(1025px)
     .footer__social-list,
@@ -82,12 +83,6 @@ a.footer__subnav-link
             align(vertical)
 
 +below(1024px)
-    .footer--top
-        border-bottom none
-        background-color transparent
-        > .container
-            max-width 100%
-            padding 0
             
     .footer__social-list,
     .footer__subnav
@@ -98,6 +93,7 @@ a.footer__subnav-link
     .footer__subnav
         // display none
         padding 2rem 0
+
     .footer__subnav-nonlink
         color gray
         position: absolute
@@ -107,7 +103,7 @@ a.footer__subnav-link
         position: static
         transform none
         
-    a.footer__subnav-link
+    .footer__subnav-link
         fs(1.6rem)
         color gray
         &:first-of-type
@@ -120,7 +116,7 @@ a.footer__subnav-link
             padding 0
             max-width 320px
             
-    a.footer__social-list-link
+    .footer__social-list-link
         float none
         display inline-block
         border-left 0px solid rgba(white,0)
@@ -129,7 +125,7 @@ a.footer__subnav-link
             border-right 0px solid rgba(white,0)
             
 +below(768px)
-    a.footer__subnav-link
+    .footer__subnav-link
         display block
         padding 2rem 0 0 0
         border-right 0px solid rgba(white,0)
