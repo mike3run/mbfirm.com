@@ -3,23 +3,23 @@
   section: Main Footer
   description: This is the main footer.
   example: |
-    footer.footer.footer--main(style='position:static;')
+    footer.footer.footer--main
         .container
             .row
                 .footer__social-list
                     .container
                         .row
                             each val, index in [{name: 'linkedin'},{name: 'twitter'},{name: 'facebook'}]
-                                a(href="")
+                                a.footer__social-list-link(href="")
                                     svg(viewbox='0 0 100 100')
-                                        use(xlink:href='includes/symbols.svg#icon_#{val.name}')
+                                        use(xlink:href='#icon-#{val.name}')
                 .footer__subnav
                     .container
                         .row
-                            a(href="#", target="_blank") Legal
-                            a(href="#", target="_blank") Privacy Policy
-                            a(href="#", target="_blank") Cookie Policy
-                            span &copy;2015 all rights reserved
+                            a.footer__subnav-link(href="#", target="_blank") Legal
+                            a.footer__subnav-link(href="#", target="_blank") Privacy Policy
+                            a.footer__subnav-link(href="#", target="_blank") Example Component
+                            span.footer__subnav-nonlink &copy;2015 all rights reserved
 ***/
 .footer--main
     position fixed
@@ -31,39 +31,43 @@
     
 .footer__social-list
     float left
-    a
-        display block
-        float left
-        size 5.2rem
-        border-left 1px solid rgba(white,0.2)
-        color white
-        position: relative
+    
+a.footer__social-list-link
+    display block
+    float left
+    size 5.2rem
+    border-left 1px solid rgba(white,0.2)
+    color white
+    position: relative
+    border-bottom none
+    transition background-color 0.2s ease
+    &:hover
         border-bottom none
-        transition background-color 0.2s ease
-        &:hover
-            border-bottom none
-            background-color darken(blue,20%)
-        &:last-of-type
-            border-right 1px solid rgba(white,0.2)
-        svg
-            size 3rem
-            align()
+        background-color darken(blue,20%)
+    &:last-of-type
+        border-right 1px solid rgba(white,0.2)
+    svg
+        size 3rem
+        align()
 
 .footer__subnav
     float: left
     color white
-    a, span
-        display inline-block
-        padding 0 1.2rem
+
+a.footer__subnav-link,
+.footer__subnav-nonlink
+    display inline-block
+    padding 0 1.2rem
+    border-bottom none
+    color white
+    fs(1.2rem)
+    &:hover
         border-bottom none
-        color white
-        fs(1.2rem)
-        &:hover
-            border-bottom none
-    a
-        border-right 0.1rem solid white
-        &:hover
-            color red
+        
+a.footer__subnav-link
+    border-right 0.1rem solid white
+    &:hover
+        color red
 
 
 +above(1025px)
@@ -94,39 +98,40 @@
     .footer__subnav
         // display none
         padding 2rem 0
-        a, span
-            color gray
-        a
-            fs(1.6rem)
-            &:first-of-type
-                padding-left 0
-            &:last-of-type
-                border-right 0px solid rgba(white,0)
-        span
-            position: absolute
-            right 0
-            display block
-            padding 2rem 0 0 0
-            position: static
-            transform none
+    .footer__subnav-nonlink
+        color gray
+        position: absolute
+        right 0
+        display block
+        padding 2rem 0 0 0
+        position: static
+        transform none
+        
+    a.footer__subnav-link
+        fs(1.6rem)
+        color gray
+        &:first-of-type
+            padding-left 0
+        &:last-of-type
+            border-right 0px solid rgba(white,0)
 
     .footer__social-list
         .container
             padding 0
             max-width 320px
-        a
-            float none
-            display inline-block
-            border-left 0px solid rgba(white,0)
-            width 25%
-            &:last-of-type
-                border-right 0px solid rgba(white,0)
+            
+    a.footer__social-list-link
+        float none
+        display inline-block
+        border-left 0px solid rgba(white,0)
+        width 25%
+        &:last-of-type
+            border-right 0px solid rgba(white,0)
             
 +below(768px)
-    .footer__subnav
-        a
-            display block
-            padding 2rem 0 0 0
-            border-right 0px solid rgba(white,0)
-            &:first-of-type
-                padding-top 0
+    a.footer__subnav-link
+        display block
+        padding 2rem 0 0 0
+        border-right 0px solid rgba(white,0)
+        &:first-of-type
+            padding-top 0

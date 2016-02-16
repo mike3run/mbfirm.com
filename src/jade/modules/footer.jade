@@ -5,13 +5,13 @@ footer.footer.footer--main
 				.container
 					.row
 						each val, index in [{name: 'linkedin'},{name: 'twitter'},{name: 'facebook'}]
-							a(href="")
+							a.footer__social-list-link(href="")
 								svg(viewbox='0 0 100 100')
 									use(xlink:href='#icon-#{val.name}')
 			.footer__subnav
 				.container
 					.row
-						a(href="#", target="_blank") Legal
-						a(href="#", target="_blank") Privacy Policy
-						a(href="#", target="_blank") Example Component
-						span &copy;2015 all rights reserved
+						a.footer__subnav-link(href="#", target="_blank") Legal
+						a.footer__subnav-link(href="#", target="_blank") Privacy Policy
+						a.footer__subnav-link(href="#", target="_blank") Example Component
+						span.footer__subnav-nonlink &copy;2015 all rights reserved
