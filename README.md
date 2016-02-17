@@ -22,3 +22,8 @@
 `gulp`
 
 Check localhost:8088 and localhost:8088/styleguide in your browser.
+
+
+## Notes
+Link to MBC design assets
+https://makeable.egnyte.com/fl/yfUhZ9ccRh
