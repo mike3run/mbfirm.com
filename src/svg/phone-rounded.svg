@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>phone-rounded</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Svgs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="svgs" sketch:type="MSArtboardGroup" transform="translate(-62.000000, -437.000000)">
+            <g id="phone-rounded" sketch:type="MSLayerGroup" transform="translate(62.000000, 437.000000)">
+                <path d="M33.5,67 C52.0015391,67 67,52.0015391 67,33.5 C67,14.9984609 52.0015391,0 33.5,0 C14.9984609,0 0,14.9984609 0,33.5 C0,52.0015391 14.9984609,67 33.5,67 Z" id="Oval-63" fill="#EF4437" sketch:type="MSShapeGroup"></path>
+                <path d="M32.7741587,19 L36.3487881,19 L32.7741587,19 Z" id="Path" stroke="#FFFFFF" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+                <path d="M39.9234175,47.0544029 L29.1995293,47.0544029 C27.2258522,47.0544029 25.6259382,45.4536691 25.6259382,43.4802612 L25.6259382,20.2488587 C25.6259382,18.2754508 27.2258522,16.674717 29.1995293,16.674717 L39.9234175,16.674717 C41.8970946,16.674717 43.4980469,18.2754508 43.4980469,20.2488587 L43.4980469,43.4802612 C43.4980469,45.4536691 41.8970946,47.0544029 39.9234175,47.0544029 L39.9234175,47.0544029 Z" id="Path" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

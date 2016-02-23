@@ -6,7 +6,7 @@ onError = (error) ->
 	$.util.beep()
 	$.util.log '======= ERROR. ========\n'
 	$.util.log error
-	
+
 gulp.task 'svgmin', ['clean:svg'], ->
 	gulp.src([
 			'src/svg/**/*.svg'
@@ -24,7 +24,7 @@ gulp.task 'svgmin', ['clean:svg'], ->
 	# 	], {base: 'src/svg'})
 	# 		.pipe $.raster {format: 'png', scale: 2}
 	# 		.pipe $.rename {extname: '.png', suffix: '-2x'}
-	# 		.pipe gulp.dest 'app/img/' 
+	# 		.pipe gulp.dest 'app/img/'
 
 gulp.task 'svg', ['svgmin'], ->
 	return gulp.src('src/svg/symbols/*.svg')
@@ -41,6 +41,5 @@ gulp.task 'svg', ['svgmin'], ->
 			parserOptions:
 				xmlMode: true
 		)
-		.pipe gulp.dest 'docs/styleguide/includes' 
-		.pipe gulp.dest 'src/jade/layouts/includes' 
-		
+		.pipe gulp.dest 'docs/styleguide/includes'
+		.pipe gulp.dest 'src/jade/layouts/includes'

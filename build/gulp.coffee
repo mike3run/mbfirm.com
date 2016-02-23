@@ -9,8 +9,8 @@ onError = (error) ->
 	$.util.beep()
 	$.util.log '======= ERROR. ========\n'
 	$.util.log error
-	
-	
+
+
 requireDir = require('require-dir')
 
 # Require all tasks in gulp/tasks, including subfolders
@@ -29,12 +29,12 @@ gulp.task 'watch', ['browser-sync'], ->
 	gulp.watch [ 'src/font/**/*' ], ['font']
 	gulp.watch [ 'src/coffee/**/**/*.coffee' ], ['coffee']
 	gulp.watch [ 'build/components/**/*' ], ['bower']
-	gulp.watch [ 
-		'./build/styleguide/**/*', 
+	gulp.watch [
+		'./build/styleguide/**/*',
 		'./README.md',
-		'./app/css/**/*.css' 
+		'./app/css/**/*.css'
 	], ['styleguide']
-	
+
 
 gulp.task 'default', (cb) ->
 	runSequence 'coffee',
@@ -42,18 +42,18 @@ gulp.task 'default', (cb) ->
 		'bower',
 		'jade',
 		'font',
-		'static', 
-		'img', 
+		'static',
+		'img',
 		'svg',
 		'watch',
 		# 'styleguide'
 		->
 
 gulp.task 'browser-sync', ->
-	browserSync 
+	browserSync
 		# proxy: 'localhost:3000'
 		port: 8088
-		open: false
+		open: true
 		tunnel: false
 		online: true
 		logConnections: true
@@ -62,7 +62,7 @@ gulp.task 'browser-sync', ->
 				match: /<browsersync>/i,
 				fn: (snippet, match) ->
 					return snippet + match;
-		files: [ 
+		files: [
 			'app/**/*',
 			'docs/styleguide/**/*'
 		]

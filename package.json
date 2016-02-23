@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "sample project",
   "main": "http://www.itsmakeable.com/love/experience/",
+  "scripts" : {
+    "gitlab" : "gulp gitlab"
+  },
   "repository": {
     "type": "git",
     "url": "http://ky.la"
@@ -39,6 +42,7 @@
     "gulp-plumber": "*",
     "gulp-rename": "*",
     "gulp-replace": "*",
+    "gulp-sourcemaps": "*",
     "gulp-stylus": "*",
     "gulp-svgmin": "*",
     "gulp-svgstore": "*",
