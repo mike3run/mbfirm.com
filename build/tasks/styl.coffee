@@ -27,7 +27,9 @@ gulp.task 'styl-watch', ->
 				jeet()
 				rupture()
 				nib()
-				autoprefixer()
+				autoprefixer(
+					browsers : ['last 2 versions']
+				)
 			]
 			include: ['src/styl']
 			compress: false
@@ -47,11 +49,11 @@ gulp.task 'styleguide', ->
 	sg = new StyleGuide
 	sg.addFile 'app/css/main.css'
 	sg.render
-		extraCss: [ 
+		extraCss: [
 			'app/css/font.css'
 		]
-		extraJs: [ 
-			'app/js/vendor.js', 
-			'app/js/app.js', 
+		extraJs: [
+			'app/js/vendor.js',
+			'app/js/app.js',
 		]
 		outputFile: 'docs/styleguide/index.html'

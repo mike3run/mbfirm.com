@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="48px" viewBox="0 0 42 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>fax</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Svgs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="svgs" sketch:type="MSArtboardGroup" transform="translate(-467.000000, -27.000000)" stroke="#D4D4D3">
+            <path d="M502.46558,28 L473.302536,28 C470.375,28 468,30.4259259 468,33.4203704 L468,68.6518519 C468,71.6462963 470.375,74.0722222 473.302536,74.0722222 L490.82971,74.0722222 C491.492754,74.0722222 492.132246,73.8185185 492.621377,73.3592593 L506.90942,59.9722222 C507.456522,59.4592593 507.768116,58.7333333 507.768116,57.9740741 L507.768116,33.4203704 C507.768116,30.4259259 505.394928,28 502.46558,28 L502.46558,28 Z M491.862319,74.0722222 L491.862319,64.587037 C491.862319,61.5925926 494.235507,59.1666667 497.163043,59.1666667 L507.105072,59.1666667 L491.862319,74.0722222 Z M474.628623,37.4851852 L495.838768,37.4851852 L474.628623,37.4851852 Z M474.628623,65.9425926 L485.233696,65.9425926 L474.628623,65.9425926 Z M474.628623,56.4555556 L490.536232,56.4555556 L474.628623,56.4555556 Z M474.628623,46.9703704 L501.141304,46.9703704 L474.628623,46.9703704 Z" id="fax" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

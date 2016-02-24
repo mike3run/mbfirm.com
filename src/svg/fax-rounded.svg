@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>fax-rounded</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Svgs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="svgs" sketch:type="MSArtboardGroup" transform="translate(-231.000000, -437.000000)">
+            <g id="fax-rounded" sketch:type="MSLayerGroup" transform="translate(231.000000, 437.000000)">
+                <circle id="Oval-63" fill="#EF4437" sketch:type="MSShapeGroup" cx="33.5" cy="33.5" r="33.5"></circle>
+                <path d="M42.025,21 L25.927,21 C24.311,21 23,22.3585185 23,24.0354074 L23,43.765037 C23,45.4419259 24.311,46.8004444 25.927,46.8004444 L35.602,46.8004444 C35.968,46.8004444 36.321,46.6583704 36.591,46.4011852 L44.478,38.9044444 C44.78,38.6171852 44.952,38.2106667 44.952,37.7854815 L44.952,24.0354074 C44.952,22.3585185 43.642,21 42.025,21 L42.025,21 Z M36.172,46.8004444 L36.172,41.4887407 C36.172,39.8118519 37.482,38.4533333 39.098,38.4533333 L44.586,38.4533333 L36.172,46.8004444 Z M26.659,26.3117037 L38.367,26.3117037 L26.659,26.3117037 Z M26.659,42.2478519 L32.513,42.2478519 L26.659,42.2478519 Z M26.659,36.9351111 L35.44,36.9351111 L26.659,36.9351111 Z M26.659,31.6234074 L41.294,31.6234074 L26.659,31.6234074 Z" id="Imported-Layers" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>mail-rounded</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Svgs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="svgs" sketch:type="MSArtboardGroup" transform="translate(-145.000000, -437.000000)">
+            <g id="mail-rounded" sketch:type="MSLayerGroup" transform="translate(145.000000, 437.000000)">
+                <circle id="Oval-63" fill="#EF4437" sketch:type="MSShapeGroup" cx="33.5" cy="33.5" r="33.5"></circle>
+                <path d="M43.6621367,45 L23.6296664,45 C21.6268608,45 19.9959259,43.3465479 19.9959259,41.3135966 L19.9959259,25.682485 C19.9959259,23.6495337 21.6268608,21.9960816 23.6296664,21.9960816 L43.6621367,21.9960816 C45.6649424,21.9960816 47.2947738,23.6495337 47.2947738,25.682485 L47.2947738,41.3135966 C47.2947738,43.3465479 45.6649424,45 43.6621367,45 L43.6621367,45 Z M23.6296664,23.1155482 C22.234875,23.1155482 21.0994001,24.2663598 21.0994001,25.682485 L21.0994001,41.3135966 C21.0994001,42.7297218 22.234875,43.8805334 23.6296664,43.8805334 L43.6621367,43.8805334 C45.0558246,43.8805334 46.1912996,42.7297218 46.1912996,41.3135966 L46.1912996,25.682485 C46.1912996,24.2663598 45.0558246,23.1155482 43.6621367,23.1155482 L23.6296664,23.1155482 L23.6296664,23.1155482 Z" id="Fill-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M33.6447981,34.1478911 L20.2673806,26.1649751 L20.8279455,25.1988754 L33.6447981,32.8481905 L46.4627542,25.1988754 L47.0222156,26.1649751 L33.6447981,34.1478911" id="Fill-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

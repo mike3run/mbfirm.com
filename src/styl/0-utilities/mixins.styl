@@ -1,0 +1,26 @@
+$absolute-cover
+	position absolute
+	top 0
+	bottom 0
+	right 0
+	left 0
+	margin auto
+
+$truncated
+	width 100%
+	overflow hidden
+	white-space: nowrap
+	text-overflow: ellipsis
+
+// Let's use some BEM helpers now inspired by Ground-Zero from @mike3run - https://github.com/mike3run/ground-zero
+e(element)
+	&__{element}
+		{block}
+
+m(modifier)
+	&--{modifier}
+		{block}
+
+is(toggable)
+	&.is-{toggable}
+		{block}

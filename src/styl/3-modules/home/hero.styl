@@ -1,0 +1,71 @@
+#hero
+  color white
+  text-align: center;
+
+  h1
+    fs(3.36rem)
+    line-height (41/33.6)
+    +above(2)
+      fs(4.48rem)
+      line-height (54/44.8)
+    +above(4)
+      fs(5.6rem)
+      line-height (68/56)
+
+  a
+    margin-top 30px
+
+  p
+    margin-top: 15px
+    +above(2)
+      fs(2rem)
+    +above(4)
+      fs(2.8rem)
+      line-height (33/28)
+
+  .carousel
+    background blue
+    +e(slide)
+      position relative
+      +m(1)
+        background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero1.jpg') no-repeat center / cover
+      +m(2)
+        background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero2.jpg') no-repeat center / cover
+      +m(3)
+        background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero3.jpg') no-repeat center / cover
+      +m(4)
+        background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero4.jpg') no-repeat center / cover
+      +m(5)
+        background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero5.jpg') no-repeat center / cover
+
+
+    +e(container)
+      center(33.5rem)
+      align(both)
+      +above(2)
+        center(58rem)
+      +above(3)
+        center(62rem)
+      +above(4)
+        center(93rem)
+      +above(5)
+        center(95rem)
+
+
+// Slick Slider Settings
+  .slick-slide
+    height: 56.6rem
+    +above(2)
+      height: 70rem
+    +above(4)
+      height: 87.4rem
+
+  .slick-dots
+    bottom: 25px
+
+  .slick-dots li.slick-active button:before
+    color white
+
+  .slick-dots li button:before
+    color: white
+    font-size 40px
