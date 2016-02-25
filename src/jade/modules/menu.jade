@@ -1,10 +1,30 @@
+mixin nav-content()
+  ul.menu__items
+    li.menu__item: a(href='#') About
+    li.menu__item: a(href='#') Practices
+    li.menu__item: a(href='#') Team
+    li.menu__item: a(href='#') News
+    li.menu__item--cta.quick-consult-trigger: a.button--3d(href='#') Quick Consult
+
 nav#main-nav
   .left
     a.logo(href='/', title="Home")
       img(src='svg/logo.svg', alt='mbc logo')
-  
+  .desktop-links
+    a.menu__link(href='#') About
+    a.menu__link(href='#') Practices
+    a.menu__link(href='#') Team
+    a.menu__link(href='#') News
   .right
     a.icon--phone(href='tel:5045819065') 504.581.9065
-    
+    a.button--3d.cta.quick-consult-trigger(href='#') Quick Consult
+  
+  .right--mobile
+    a.icon--phone(href='tel:5045819065') 504.581.9065
     .toggle
       .toggle__burger
+
+    .mobile-nav__overlay
+    .mobile-nav__sidebar
+      .mobile-nav__sidebar--close
+      +nav-content()

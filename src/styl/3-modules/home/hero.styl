@@ -6,14 +6,17 @@
     fs(3.36rem)
     line-height (41/33.6)
     +above(2)
-      fs(4.48rem)
-      line-height (54/44.8)
+      fs(4.4rem)
+      line-height (54/44)
     +above(4)
       fs(5.6rem)
       line-height (68/56)
 
   a
     margin-top 30px
+    padding 12px 25px
+    +above(4)
+      margin-top: 45px
 
   p
     margin-top: 15px
@@ -43,14 +46,23 @@
       center(33.5rem)
       align(both)
       +above(2)
-        center(58rem)
+        center(60rem)
+        width: 60rem
       +above(3)
         center(62rem)
+        width: 63rem
       +above(4)
         center(93rem)
+        width: 93rem
       +above(5)
         center(95rem)
+        width: 95rem
 
+  .right-arrow
+      position: absolute
+      max-width: 25px
+      top 25%
+      right 10%
 
 // Slick Slider Settings
   .slick-slide

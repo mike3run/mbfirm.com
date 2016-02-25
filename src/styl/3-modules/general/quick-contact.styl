@@ -1,0 +1,57 @@
+#quick-contact
+  .sidebar
+    height: 100%
+    width: 100%
+    background: blue-light
+    color white
+    position: fixed
+    z-index 10
+    top 0
+    right -101%
+    text-align: center
+    padding: 45px
+    transition trns-default
+    +above(2)
+      width 50%
+
+    +is(active)
+      right 0
+
+    +e(close)
+      content ''
+      width: 25px
+      height: 25px
+      cursor pointer
+      position: absolute
+      top 45px
+      left 30px
+      transform-origin center
+
+      &::before, &::after
+        content ''
+        display: block
+        width 100%
+        height 2px
+        background: white
+        position: absolute
+        top 12px
+
+      &::before
+        transform: rotate(45deg)
+
+      &::after
+        transform: rotate(-45deg)
+
+  .overlay
+    height: 100%
+    width: 100%
+    background: transparent
+    position: fixed
+    top 0
+    left 0
+    z-index 9
+    pointer-events none
+    transition trns-default
+    +is(active)
+      pointer-events: all
+      background: rgba(blue-light, 0.75)
