@@ -35,6 +35,10 @@ a
 			background darken(red, 20%)
 		&:active
 			background red
+		&:visited
+			color white
+			&:hover
+				color white
 
 		&--3d
 			@extend a.button
@@ -52,3 +56,8 @@ a
 				border 1px solid darken(red, 20%)
 			&:active
 				background red
+
+		&--arrow-clear
+			@extend a.button--clear
+			padding-right 60px !important
+			position relative

@@ -1,0 +1,12 @@
+#quick-contact
+  .overlay
+  
+  .sidebar
+    .sidebar__close
+    h2 Quick Consult
+    form(action='#', method='POST')
+      input(type='text', placeholder='Full Name', name='name')
+      input(type='email', placeholder='Email Address', name='email')
+      input(type='tel', placeholder='Phone Number')
+      textarea(placeholder='Brief description of legal issue', rows='1')
+      input.button--arrow-clear(type='submit', value='Submit')

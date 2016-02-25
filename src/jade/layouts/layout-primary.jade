@@ -21,8 +21,11 @@ html.no-js(lang='en')
 
 	body(style='opacity:0')
 
-		//- div.is-hidden
-		//- 	include ./includes/symbols.svg
+		div.is-hidden
+			include ./includes/symbols.svg
+			
+		include ../modules/menu
+		include ../modules/quick-contact
 		block content
 			//- This gets replaced by content in index.jade
 		

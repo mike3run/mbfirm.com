@@ -29,7 +29,12 @@ gulp.task 'svgmin', ['clean:svg'], ->
 gulp.task 'svg', ['svgmin'], ->
 	return gulp.src('src/svg/symbols/*.svg')
 		.pipe $.plumber(errorHandler: onError)
-		.pipe $.svgmin()
+		.pipe $.svgmin(
+			plugins: [
+				{removeAttrs: true}
+				{sortAttrs : true}
+			]
+		)
 		.pipe $.svgstore(
 			fileName: 'symbols.svg'
 			inlineSvg: true
