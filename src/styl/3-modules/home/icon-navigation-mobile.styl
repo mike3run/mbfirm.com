@@ -1,0 +1,81 @@
+#icon-navigation-mobile
+  color blue
+  font-family museo-300
+  fs(2rem)
+  line-height (24/20)
+  padding 5px 0
+  +above(3)
+    display: none
+
+  .icon
+    max-width: 32px
+    max-height: 32px
+    display: inline-block
+    margin-right: 20px
+    margin-bottom: -5px
+
+  .current-item
+    padding: 10px 20px
+    position: relative
+    cursor pointer
+    &::before, &::after
+      content ''
+      display: block
+      height: 2px
+      width 25px
+      background: red
+      transform-origin: center
+      transition: trns-default
+      position: absolute
+      top 50%
+    &::before
+      transform: rotate(45deg)
+      right 40px
+    &::after
+      transform: rotate(-45deg)
+      right 23px
+
+    +is(active)
+      &::before
+        transform: rotate(-45deg)
+      &::after
+        transform: rotate(45deg)
+
+    +above(2)
+      padding: 15px 50px
+
+  .dropdown-container
+    position: relative
+    content: ''
+    width 100%
+    min-height: 1px
+
+  .dropdown
+    display flex
+    flex-direction column
+    width 100%
+    background white
+    box-shadow 0 4px 2px 0 rgba(0,0,0,0.15)
+    padding 10px 20px
+    position absolute
+    top -70px
+    opacity 0
+    transition: 0.5s ease
+    pointer-events: none
+
+    +is(active)
+      top 0
+      opacity 1
+      pointer-events: all
+      z-index: 2
+
+    +above(2)
+      padding: 15px 50px
+
+  .dropdown__element
+    margin-top: 10px
+    margin-bottom: 20px
+    cursor pointer
+
+    +is(selected)
+      font-family: museo-700
