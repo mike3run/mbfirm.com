@@ -1,0 +1,43 @@
+/*!**
+  title: Secondary Header
+  section: Secondary Header
+  description: Just a Secondary Header for use on inner pages
+  example: |
+    section#secondary-header
+      .container
+        h1.secondary-header__text Good People.
+        h1.secondary-header__text Even Better Attorneys.
+***/
+
+#secondary-header
+  height 273px
+  text-align: center
+  background linear-gradient(rgba(45,62,80,0.40),rgba(45,62,80,0.40)), url('../img/secondary1.jpg') no-repeat 50% 15% / cover
+  color white
+  position: relative
+  +above(2)
+    height: 364px
+  +above(4)
+    height 455px
+
+  .container
+    center(33.5rem)
+    align(both)
+    +above(2)
+      center(58rem)
+    +above(3)
+      center(62rem)
+    +above(4)
+      center(93rem)
+    +above(5)
+      center(95rem)
+
+  .secondary-header__text
+    fs(3.36rem)
+    line-height: (41/33.6)
+    +above(2)
+      fs(4.48rem)
+      line-height: (54/44.8)
+    +above(4)
+      fs(5.6rem)
+      line-height: (68/56)

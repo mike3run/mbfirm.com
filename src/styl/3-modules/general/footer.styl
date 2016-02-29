@@ -3,131 +3,111 @@
   section: Main Footer
   description: This is the main footer.
   example: |
-    footer.footer.footer--main
+    footer#footer
         .container
             .row
-                .footer__social-list
-                    .container
-                        .row
-                            each val, index in [{name: 'linkedin'},{name: 'twitter'},{name: 'facebook'}]
-                                a.footer__social-list-link(href="")
-                                    svg.footer__social-list-icon(viewbox='0 0 100 100')
-                                        use(xlink:href='#icon-#{val.name}')
-                .footer__subnav
-                    .container
-                        .row
-                            a.footer__subnav-link(href="#", target="_blank") Legal
-                            a.footer__subnav-link(href="#", target="_blank") Privacy Policy
-                            a.footer__subnav-link(href="#", target="_blank") Example Component
-                            span.footer__subnav-nonlink &copy;2015 all rights reserved
 ***/
-.footer--main
-    position fixed
-    bottom px(40)
-    left px(40)
-    right px(40)
-    background-color: blue
-    border-top 1px solid rgba(white,0.2)
 
-.footer__social-list
-    float left
+#footer
+  background black
+  color white
+  padding: 85px 15%
 
-.footer__social-list-link
-    display block
-    float left
-    size 5.2rem
-    border-left 1px solid rgba(white,0.2)
-    color white
-    position: relative
-    border-bottom none
-    transition background-color 0.2s ease
-    &:hover
-        border-bottom none
-        background-color darken(blue,20%)
-        color white
-    &:last-of-type
-        border-right 1px solid rgba(white,0.2)
+  .row
+    max-width: 50%
+    +above(3)
+      max-width: 100%
 
-.footer__social-list-icon
-    size 3rem
-    align()
+  .footer__logo
+    max-width: 140px
+    margin-bottom: 40px
+    +above(3)
+      max-width: 175px
 
-.footer__subnav
-    float: left
-    color white
+  .footer__address
+    margin-bottom: 40px
+    +above(3)
+      margin-bottom: 0
+      column(3/12)
 
-.footer__subnav-link,
-.footer__subnav-nonlink
-    display inline-block
-    padding 0 1.2rem
-    border-bottom none
-    color white
-    fs(1.2rem)
-    &:hover
-        border-bottom none
-
-.footer__subnav-link
-    border-right 0.1rem solid white
-    &:hover
-        color red
-
-+above(1025px)
-    .footer__social-list,
-    .footer__subnav
-        .container
-            max-width 100%
-            padding 0
-    .footer__subnav
-        padding-left 1.2rem
-        .container
-            align(vertical)
-
-+below(1024px)
-
-    .footer__social-list,
-    .footer__subnav
-        float: none
-        padding-left 0
-        text-align center
-
-    .footer__subnav
-        // display none
-        padding 2rem 0
-
-    .footer__subnav-nonlink
-        color gray
+    &--map
+      position: relative
+      &::before
         position: absolute
-        right 0
-        display block
-        padding 2rem 0 0 0
-        position: static
-        transform none
+        content ''
+        width 25px
+        height 25px
+        background: url('../svg/map.svg') no-repeat center / cover
+        top 0
+        left -40px
 
-    .footer__subnav-link
-        fs(1.6rem)
-        color gray
-        &:first-of-type
-            padding-left 0
-        &:last-of-type
-            border-right 0px solid rgba(white,0)
+  .footer__numbers
+    margin-bottom: 40px
+    +above(3)
+      margin-bottom: 0
+      column(2/12, offset: 1/12)
 
-    .footer__social-list
-        .container
-            padding 0
-            max-width 320px
+    &--fax
+      position: relative
+      &::before
+        content ''
+        width 20px
+        height 23px
+        position: absolute
+        background: url('../svg/fax.svg') no-repeat center / cover
+        top 10%
+        left -33px
 
-    .footer__social-list-link
-        float none
-        display inline-block
-        border-left 0px solid rgba(white,0)
-        width 25%
-        &:last-of-type
-            border-right 0px solid rgba(white,0)
+    &--phone
+      position: relative
+      &::before
+        content ''
+        width 15px
+        height 25px
+        background url('../svg/phone-round.svg') no-repeat center / cover
+        position: absolute
+        top 10%
+        left -30px
 
-+below(768px)
-    .footer__subnav-link
-        display block
-        padding 2rem 0 0 0
-        border-right 0px solid rgba(white,0)
-        &:first-of-type
-            padding-top 0
+  .footer__social
+    +above(3)
+      column(4/12, offset: 1/12)
+      margin-bottom: 0
+
+    +above(4)
+      column(4/12, offset: 2/12)
+
+  .footer__social--icon
+    text-indent: 101%
+    overflow: hidden
+    white-space: nowrap
+    width 42px
+    height 42px
+    display: inline-block
+    margin: 0 10px 10px
+    opacity: 0.75
+    transition trns-default
+    &:hover
+      opacity: 1
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+
+    &.facebook
+  	  background url('../svg/facebook.svg') no-repeat center / cover
+
+    &.google-plus
+  	  background url('../svg/google-plus.svg') no-repeat center / cover
+
+    &.linkedin
+  	  background url('../svg/linkedin.svg') no-repeat 50% 49% / cover
+
+    &.twitter
+  	  background url('../svg/twitter.svg') no-repeat center / cover
+
+    &.youtube
+  	  background url('../svg/youtube.svg') no-repeat center / cover
+
+    &.yelp
+  	  background url('../svg/yelp.svg') no-repeat center / cover

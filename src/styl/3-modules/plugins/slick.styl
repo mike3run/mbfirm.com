@@ -1,0 +1,39 @@
+.slick-dots
+  bottom: 25px
+
+
+// General Style of dots
+.slick-dots li button:before
+  content ''
+  width: 11px
+  height 11px
+  opacity 1
+  border 1px solid white
+  border-radius: 50%
+
+// Style for the active button
+.slick-dots li.slick-active button:before
+  opacity: 1
+  background white
+
+// Styles for the arrows
+.slick-prev, .slick-next
+  z-index: 1
+  width 45px
+  height 45px
+
+.slick-prev:before, .slick-next:before
+  content ''
+  width 45px
+  height 45px
+  display: block
+
+.slick-prev:before
+  background: url('../svg/back-arrow.svg') no-repeat 50% 49% / cover
+.slick-next:before
+  background: url('../svg/forward-arrow.svg') no-repeat 50% 49% / cover
+.slick-prev
+  left 2%
+
+.slick-next
+  right 2%

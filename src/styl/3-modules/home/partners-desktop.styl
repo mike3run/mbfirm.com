@@ -1,0 +1,21 @@
+#pull-quotes
+  .partners-desktop
+    display: none
+    width: 100%
+    +above(3)
+      display: block
+
+  .partners-desktop__row
+    display: flex
+    justify-content: center
+
+  .partner
+    +above(3)
+      margin 25px 12.5px
+    +above(4)
+      max-width: 260px
+
+    &--vip
+      max-width: 280px
+      +above(4)
+        max-width: 350px
