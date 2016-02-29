@@ -1,77 +1,31 @@
-#icon-navigation-mobile
-  color blue
-  font-family museo-300
-  fs(2rem)
-  line-height (24/20)
+#icon-navigation
+  background blue
+  color white
+  text-align: center
+  display: none
+  +above(3)
+    display: block
+
+  span
+    font-family: lato-light
+    fs(1.8rem)
+    line-height: (22/18)
 
   .icon
-    max-width: 32px
-    max-height: 32px
-    display: inline-block
-    margin-right: 20px
-    margin-bottom: -5px
+    max-width: 52px
+    max-height: 52px
+    margin-bottom: 25px
 
-  .current-item
-    padding: 10px 20px
-    position: relative
+  .options
+    cf()
+    padding: 90px 25px 0
+
+  .option
+    cf()
+    column(1/7, gutter: .9)
     cursor pointer
-    &::before, &::after
-      content ''
-      display: block
-      height: 2px
-      width 25px
-      background: red
-      transform-origin: center
-      transition: trns-default
-      position: absolute
-      top 50%
-    &::before
-      transform: rotate(45deg)
-      right 40px
-    &::after
-      transform: rotate(-45deg)
-      right 23px
+    opacity: 0.2
+    transition trns-default
 
     +is(active)
-      &::before
-        transform: rotate(-45deg)
-      &::after
-        transform: rotate(45deg)
-
-  .dropdown-container
-    position: relative
-    content: ''
-    width 100%
-    min-height: 1px
-
-  .dropdown
-    display flex
-    flex-direction column
-    width 100%
-    background white
-    box-shadow 0 4px 2px 0 rgba(0,0,0,0.15)
-    padding 10px 20px
-    position absolute
-    top -70px
-    opacity 0
-    transition: 0.5s ease
-    pointer-events: none
-
-    +is(active)
-      top 0
       opacity 1
-      pointer-events: all
-
-
-
-  .dropdown__element
-    margin-top: 10px
-    margin-bottom: 20px
-    cursor pointer
-
-    +is(selected)
-      font-family: museo-700
-
-
-.fill
-  fill: white

@@ -29,20 +29,12 @@ gulp.task 'svgmin', ['clean:svg'], ->
 gulp.task 'svg', ['svgmin'], ->
 	return gulp.src('src/svg/symbols/*.svg')
 		.pipe $.plumber(errorHandler: onError)
-		.pipe $.svgmin(
-			plugins: [
-				{removeAttrs: true}
-				{sortAttrs : true}
-			]
-		)
+		.pipe $.svgmin()
 		.pipe $.svgstore(
 			fileName: 'symbols.svg'
 			inlineSvg: true
 		)
 		.pipe $.cheerio(
-			run: (jQuery) ->
-				jQuery('[fill]').attr 'fill', 'currentColor'
-				jQuery('[stroke]').attr 'stroke', 'currentColor'
 			parserOptions:
 				xmlMode: true
 		)

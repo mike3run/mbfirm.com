@@ -1,0 +1,9 @@
+section#text-slider
+  .slides
+    each slide, index in [{"title":"BP Settlement Contains Too Little Money","date":"October 25th, 2015","content":"A recent article on NOLA.com states that parish officials say that the BP settlement doesn’t contain enough money for the restoration of Plaquemines Parish. The proposed $20.8 billion for civil fines and environmental damages resulting from the Deepwater Horizon disaster and oil spill doesn’t adequately compensate damages suffered by Plaquemines Parish, according to the article.","backgroundImg":"textslider1"},{"title":"AAJ Leadership Academy Accepts One","date":"November 20th, 2015","content":"A recent article on NOLA.com states that parish officials say that the BP settlement doesn’t contain enough money for the restoration of Plaquemines Parish. The proposed $20.8 billion for civil fines and environmental damages resulting from the Deepwater Horizon disaster and oil spill doesn’t adequately compensate damages suffered by Plaquemines Parish, according to the article.","backgroundImg":"textslider2"},{"title":"Plaquemines Parish to Meet About Proposed","date":"October 22nd, 2015","content":"A recent article on NOLA.com states that parish officials say that the BP settlement doesn’t contain enough money for the restoration of Plaquemines Parish. The proposed $20.8 billion for civil fines and environmental damages resulting from the Deepwater Horizon disaster and oil spill doesn’t adequately compensate damages suffered by Plaquemines Parish, according to the article.","backgroundImg":"textslider3"}]
+      .slide(style='background: linear-gradient(rgba(48,71,96,0.75), rgba(48,71,96,0.75)), url("../img/#{slide.backgroundImg}.jpg")no-repeat center / cover;')
+        .slide__container
+          h3.slide__title= slide.title
+          span.slide__date= slide.date
+          p.slide__content= slide.content
+          a.slide__cta.button--3d Read Full Article

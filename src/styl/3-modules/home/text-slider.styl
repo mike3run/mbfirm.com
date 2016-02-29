@@ -1,0 +1,47 @@
+#text-slider
+  background rgba(blue, 0.75)
+  color white
+
+  .slides
+    margin-bottom: 0
+
+  .slide
+    //height auto
+    padding-top: 135px
+    padding-bottom: 150px
+
+    &__container
+      center(34rem)
+      +above(2)
+        center(44.7rem)
+      +above(3)
+        center(62.3rem)
+      +above(4)
+        center(73.5rem)
+      +above(5)
+        center(95rem)
+
+    &__title
+      font-family: museo-500
+      fs(3.36rem)
+      line-height: (42/33.6)
+      margin-bottom: 20px
+      +above(2)
+        fs(4.43rem)
+        line-height: (56/44.3)
+
+
+    &__date
+      fs(1.8rem)
+      line-height: (22/18)
+      font-family: lato-light
+      margin-bottom: 20px
+      display: block
+
+    &__content
+      fs(2.2rem)
+      line-height: (34/22)
+      font-family: lato-light
+
+    &__cta
+      margin-top: 20px
