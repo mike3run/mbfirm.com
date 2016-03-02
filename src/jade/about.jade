@@ -1,7 +1,18 @@
 extends layouts/layout-primary
 
 block content
-  include about/secondary-header	
+  section#about-header
+    include about/secondary-header	
+  section#body-white
+    include about/body
+  include about/quotes
+  section#body-blue
+    include about/body-blue
+  
+  include about/testimonials
+  include about/consultation
+  include about/pagination
+  
   
 block footer
   include modules/footer

@@ -1,0 +1,41 @@
+.pagination
+  padding 20px 25px 40px
+  display: flex
+  justify-content: space-between
+  +above(4)
+    padding: 40px 45px
+
+  &__previous
+    max-width: 136px
+    display: flex
+    align-items: center
+
+  &__next
+    max-width: 136px
+    display: flex
+    align-items: center
+
+  &__title
+    display: none
+    +above(3)
+      display: block
+      color blue
+      text-align: center
+
+
+  &__text
+    color red
+    fs(1.6rem)
+    line-height: (19/16)
+    font-family: museo-500
+    padding: 0
+
+    &--previous
+      margin-left: 10px
+
+    &--next
+      margin-right: 10px
+
+  &__arrow
+    min-width: 54px
+    max-width: 54px

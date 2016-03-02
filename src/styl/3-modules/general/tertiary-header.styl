@@ -1,0 +1,63 @@
+#tertiary-header
+  background url('../img/teamPoster1.jpg') no-repeat center / cover
+  color white
+  position: relative
+  min-height: 273px
+
+  +above(2)
+    min-height 364px
+  +above(4)
+    min-height 454px
+
+  .overlay
+    background: rgba(blue, 0.5)
+    min-height 273px
+    position: relative
+    +above(2)
+      max-width: 50%
+      min-height 364px
+      margin-left: 50%
+    +above(4)
+      min-height 454px
+
+  .contents
+    align(both)
+    width 336px
+    +above(2)
+      width 237px
+    +above(3)
+      width 300px
+    +above(4)
+      width 463px
+
+
+  .title, .quote
+    display: block
+
+  .name
+    fs(3.36rem)
+    line-height: (41/33.6)
+    font-family: museo-500
+    +above(2)
+      fs(4.43rem)
+      line-height: (54/44.3)
+    +above(4)
+      fs(5.6rem)
+      line-height: (70/56)
+
+  .title
+    font-family: lato-light
+    fs(1.8rem)
+    line-height: (22/18)
+
+
+  .quote
+    font-family: museo-300
+    fs(1.68rem)
+    line-height: (20/16.8)
+    +above(2)
+      fs(2.24rem)
+      line-height: (27/22.4)
+    +above(4)
+      fs(2.8rem)
+      line-height: (33/28)

@@ -1,0 +1,14 @@
+extends layouts/layout-primary
+
+block content
+  section#header
+    include news/header
+  include news/brief
+  section#news-content
+    include news/contents
+  include news/pagination
+  include news/related
+  
+  
+block footer
+  include modules/footer

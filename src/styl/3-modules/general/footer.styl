@@ -4,19 +4,30 @@
   description: This is the main footer.
   example: |
     footer#footer
-        .container
-            .row
+      .container
+        .row
+          .footer__logo
+            img(src='svg/logoWhite.svg', alt='mbc logo')
+
+        .row
+          .footer__address
+            p.footer__address--map Martzell, Bickford and Centola
+            p 338 Lafayette Street
+            p New Orleans, LA 70130
+          .footer__numbers
+            p.footer__numbers--phone 504.581.9065
+            p.footer__numbers--fax 504.581.7635
+
+          .footer__social
+            a.footer__social--icon.facebook(href='#') Facebook
+            a.footer__social--icon.linkedin(href='#') LinkedIn
+            a.footer__social--icon.twitter(href='#') Twitter
 ***/
 
 #footer
   background black
   color white
   padding: 85px 15%
-
-  .row
-    max-width: 50%
-    +above(3)
-      max-width: 100%
 
   .footer__logo
     max-width: 140px

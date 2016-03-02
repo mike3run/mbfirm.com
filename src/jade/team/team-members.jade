@@ -1,0 +1,11 @@
+section#team-members
+  .container
+    each partner, index in [{"name":"Scott R. Bickford","img":"scottbrickford","charge":"Partner"},{"name":"Larry J. Centola","img":"larrycentola","charge":"Partner"},{"name":"Spencer Ryan Doody","img":"spencerdoody"},{"name":"Roshawn Husband Donahue","img":"roshawnhusband"},{"name":"Neil F. Nazareth Esq.","img":"neilnazareth"},{"name":"Jason Zachary Landry","img":"jasonlandry"}] 
+      .partner(slide='#{index}')
+        .partner__borders
+          .partner__img
+            img(src='img/#{partner.img}.jpg', alt='#{partner.name}')
+          .partner__info
+            span.partner__name= partner.name
+            if partner.charge
+              span.partner__title= partner.charge

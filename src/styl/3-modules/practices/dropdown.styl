@@ -1,0 +1,105 @@
+#dropdown
+  color blue
+  font-family museo-300
+  fs(2rem)
+  line-height (24/20)
+  padding 25px 0
+  +above(3)
+    padding 90px 0
+
+  .container
+    max-width: 80%
+    +above(3)
+      max-width: 830px
+  h1
+    text-align: center
+    fs(3.36rem)
+    line-height: (41/33.6)
+    +above(3)
+      fs(5.6rem)
+      line-height: (70/56)
+      margin-bottom: 50px
+
+  .icon
+    max-width: 32px
+    max-height: 32px
+    display: inline-block
+    margin-right: 20px
+    margin-bottom: -5px
+
+  .current-item
+    padding: 10px 20px
+    position: relative
+    cursor pointer
+    border-bottom: 1px solid blue-light
+    text-align: center
+    &::before, &::after
+      content ''
+      display: block
+      height: 2px
+      width 25px
+      background: blue
+      transform-origin: center
+      transition: trns-default
+      position: absolute
+      top 50%
+    &::before
+      transform: rotate(45deg)
+      right 23px
+      +above(3)
+        right 40px
+    &::after
+      transform: rotate(-45deg)
+      right 6px
+      +above(3)
+        right 23px
+
+    +is(active)
+      text-align: left
+      border: none
+      &::before
+        transform: rotate(-45deg)
+        background: red
+      &::after
+        transform: rotate(45deg)
+        background: red
+
+    +above(2)
+      padding: 15px 50px
+
+  .dropdown-container
+    position: relative
+    content: ''
+    width 100%
+    min-height: 1px
+
+  .dropdown
+    display flex
+    flex-direction column
+    width 100%
+    background white
+    box-shadow 0 4px 2px 0 rgba(0,0,0,0.15)
+    padding 10px 20px
+    position absolute
+    top -70px
+    opacity 0
+    transition: 0.5s ease
+    pointer-events: none
+
+    +is(active)
+      top 0
+      opacity 1
+      pointer-events: all
+      z-index: 2
+
+    +above(2)
+      padding: 15px 50px
+
+  .dropdown__element
+    margin-top: 10px
+    margin-bottom: 20px
+    cursor pointer
+    color blue
+
+    +is(selected)
+      font-family: museo-700

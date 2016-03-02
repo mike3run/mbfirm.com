@@ -1,0 +1,34 @@
+#navigation-practices
+  background blue
+  color white
+  text-align: center
+  display: none
+  padding: 100px 25px 90px
+
+  +above(3)
+    display: block
+
+  span
+    font-family: lato-light
+    fs(1.8rem)
+    line-height: (22/18)
+
+  .icon
+    max-width: 52px
+    max-height: 52px
+    margin-bottom: 25px
+
+  .options
+    cf()
+    margin-top: 50px
+
+  .option
+    cf()
+    color white
+    column(1/7, gutter: .9)
+    cursor pointer
+    opacity: 0.2
+    transition trns-default
+
+    +is(active)
+      opacity 1
