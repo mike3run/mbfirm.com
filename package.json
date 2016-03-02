@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "sample project",
   "main": "http://www.itsmakeable.com/love/experience/",
-  "scripts" : {
-    "gitlab" : "gulp gitlab"
+  "scripts": {
+    "gitlab": "gulp clean && gulp gitlab"
   },
   "repository": {
     "type": "git",

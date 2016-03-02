@@ -19,6 +19,8 @@ $('#pull-quotes .partners').slick(
   slidesToShow : 2
   slidesToScroll : 2
   mobileFirst : true
+  autoplay : true
+  autoplaySpeed : 5000
   responsive : [
     {
       breakpoint : 768

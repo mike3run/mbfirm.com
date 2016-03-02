@@ -1,0 +1,111 @@
+#quotes
+  .white-relative
+    content ''
+    min-height 300px
+    width 100%
+    position: relative
+    z-index: -2
+
+  .blue-relative
+    content ''
+    min-height 300px
+    width 100%
+    background blue
+    z-index: -3
+    position: relative
+    padding-top: 575px
+    +above(3)
+      padding-top: 500px
+    +above(4)
+      padding-top: 325px
+    +above(5)
+      padding-top: 250px
+
+  .quotes
+    background red
+    center(42.1rem, 45px)
+    width 95%
+    align(horizontal)
+    padding-top 70px
+    padding-bottom 70px
+    top 45px
+    z-index: -1
+    +above(2)
+      center(59.7rem, 60px)
+      width 90%
+    +above(3)
+      center(80%, 80px)
+      width 80%
+    +above(4)
+      center(122.7rem, 120px)
+      width 95%
+
+    .quote
+      color white
+
+      &__text
+        font-family museo-500
+        fs(3.36rem)
+        line-height: (42/33.6)
+        position: relative
+        +above(2)
+          fs(4.48rem)
+          line-height (56/44.8)
+        +above(4)
+          margin-bottom: 30px
+
+        &::before, &::after
+          fs(7.6rem)
+          font-family 'Lucida Grande', serif
+          font-weight 400
+          position: absolute
+          opacity 0.25
+          +above(2)
+            fs(12rem)
+
+        &::before
+          content open-quote
+          top -10px
+          left -30px
+          +above(2)
+            top -35px
+            left -45px
+        &::after
+          content close-quote
+          bottom -25px
+          right auto
+          +above(2)
+            bottom -60px
+
+      &__author
+        font-family museo-300
+        fs(1.68rem)
+        line-height (20/16)
+        margin-top 10px
+        +above(2)
+          fs(2.24rem)
+          line-height (27/22.4)
+
+
+      &__cta
+        display: block
+        margin-top: 30px
+        margin-left: auto
+        margin-right: auto
+        max-width: 170px
+        padding 12px 20px
+        &:hover
+          background blue
+
+        +above(2)
+          display: inline-block
+
+        +above(4)
+          margin-top: 50px
+          padding 14px 60px 14px 24px !important
+
+      .right-arrow
+        position: absolute
+        max-width: 20px
+        top 25%
+        right 15%

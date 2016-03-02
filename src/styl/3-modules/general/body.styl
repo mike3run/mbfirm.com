@@ -1,0 +1,100 @@
+/*!**
+  title: Body
+  section: Body
+  description: The Body section for the about, team, etc
+  example: |
+    .body
+      .sidebar
+        a.icon.icon--phone(href='tel:5045819065') 504.581.9065
+        a.span.icon.icon--mail(href='mailto:info@mbc.com') info@mbc.com
+        a.span.icon.icon--fax(href='#') 504.581.7635
+      .contents
+        h2 Our Philosofy
+        p At Martzell and Bickford, we are not just lawyers. We pride ourselves in being three things: A friend, an advocate, and a fighter.
+        p We represent every day people, standing up for them in large complex and sometimes  intimidating legal matters.
+        p When it comes to our clients, we have one main objective: to meet their  individual needs in a manner that makes them comfortable and fosters an understanding of the process and stages of litigation.
+        p We are people first, and attorneys second.  We are hard-working advocates, negotiators, and champions in the courtroom, while maintaining an accessible and comforting one-to-one relationship with the clients we represent.
+        p We are of the belief that how we conduct ourselves as attorneys should align with the morals, ethics, and ideology which guide our everyday lives as people.
+        p With specialized and focused experience in the areas of law we practice, our small but mighty team of litigators is both proactive and responsive, working tirelessly to find smart, creative winning strategies for those we represent.
+
+***/
+
+.body
+  padding: 40px 60px
+  cf()
+
+  .sidebar
+    +above(2)
+      column(4/12)
+
+    +above(4)
+      column(2/12)
+
+    h2
+      fs(2.254rem)
+      line-height: (36/22.54)
+      margin-bottom: 20px
+      color blue-light
+
+    ul
+      list-style-type: square
+      color blue-light
+
+    li
+      fs(1.44rem)
+      line-height: (17/14.4)
+      margin-bottom: 20px
+      color blue-light
+
+    p
+      fs(1.44rem)
+      line-height: (17/14.4)
+      margin-bottom: 20px
+
+    .icon
+      display: block
+      font-family: museo-300
+      fs(1.6rem)
+      line-height: (19/16)
+      color blue-light
+      padding-left: 65px
+      margin-bottom: 50px
+      position: relative
+
+      &:first-child
+        margin-top: 20px
+
+      &::before
+        content ''
+        width: 55px
+        height 55px
+        position: absolute
+        border-radius: 50%
+        bottom -8px
+        left 0
+
+      &--phone::before
+        background url('../svg/phone-round.svg') no-repeat center / 18px, red
+
+      &--fax::before
+        background url('../svg/fax.svg') no-repeat center / 20px, red
+
+      &--mail::before
+        background url('../svg/mail.svg') no-repeat center / 23px, red
+
+  .contents
+    +above(2)
+      column(7/12, offset: 1/12)
+    +above(4)
+      column(5/12, offset:3/12)
+    h2
+      margin-bottom: 30px
+
+    h3
+      margin-bottom: 30px
+
+    .blue-light
+      color blue-light
+
+    .gray
+      color black
