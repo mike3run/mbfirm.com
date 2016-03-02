@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 638,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -581,10 +589,21 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Kyla/Sites/enriquez-bocobo.com/static"
+		"/Users/kyla/Sites/mbfirm.com"
 	],
 	"file_history":
 	[
+		"/Users/kyla/Sites/mbfirm.com/src/jade/modules/footer.jade",
+		"/Users/kyla/Sites/mbfirm.com/src/styl/modules/footer.styl",
+		"/Users/kyla/Sites/mbfirm.com/src/styl/base.styl",
+		"/Users/kyla/Sites/mbfirm.com/src/styl/links.styl",
+		"/Users/kyla/Sites/mbfirm.com/.git/MERGE_MSG",
+		"/Users/kyla/Sites/mbfirm.com/src/jade/index.jade",
+		"/Users/kyla/Sites/mbfirm.com/src/jade/layouts/layout-primary.jade",
+		"/Users/kyla/Sites/mbfirm.com/src/styl/grid.styl",
+		"/Users/kyla/Sites/mbfirm.com/src/styl/settings.styl",
+		"/Users/kyla/Sites/mbfirm.com/package.json",
+		"/Users/kyla/Sites/mbfirm.com/build/bower.json",
 		"/Users/Kyla/Sites/enriquez-bocobo.com/static/project.sublime-workspace",
 		"/Users/Kyla/Sites/enriquez-bocobo.com/static/project.sublime-project",
 		"/Users/Kyla/Sites/kyla/src/jade/personal-identity.jade",
@@ -701,28 +720,18 @@
 		"/Users/Kyla/Sites/cognizant/src/styl/settings.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-flyout.styl",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_filter.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_search.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_pdf.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_triangle.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_triangle-filled.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_star.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_star-filled.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_share-filled.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_share.svg",
-		"/Users/Kyla/Sites/cognizant/docs/styleguide/svg/symbols/icon_triangle.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-perspectives-app.jade",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_linkedin.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-cognizant-connections.jade"
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_search.svg"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
 		"height": 106.0,
 		"where_history":
 		[
+			"*.styl",
 			"*.jade",
 			"*.styl",
 			"*",
@@ -774,6 +783,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"border: none",
+			"border none",
+			".footer__subnav-link",
+			"footer__social-list-link",
+			"a.",
+			"span.",
+			"span",
+			"footer__social-list-link",
+			".footer__social-list",
+			"link",
+			".footer__social-list",
+			"border-bot",
+			"white",
+			"')",
 			"details",
 			"a(href='index.html')",
 			"li.backtoworks\n  a(href='index.html')",
@@ -887,21 +910,7 @@
 			"profile-box__list-item",
 			"share",
 			"triangle",
-			"fill",
-			"12px",
-			"20px",
-			"20p",
-			"12px",
-			"12",
-			"search",
-			"html",
-			"url(svg/s",
-			"url(svg/",
-			"svg",
-			"main-header__search-container",
-			"search__input",
-			"raphael",
-			"("
+			"fill"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -937,6 +946,100 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								538,
+								538
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"hasHeader": false,
+							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 85.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
 		}
 	],
 	"incremental_find":
@@ -956,11 +1059,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.315088287602,
 			1.0
 		],
 		"rows":
@@ -987,6 +1097,50 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ba",
+				"src/styl/base.styl"
+			],
+			[
+				"link",
+				"src/styl/links.styl"
+			],
+			[
+				"foo",
+				"src/styl/modules/footer.styl"
+			],
+			[
+				"foot",
+				"src/jade/modules/footer.jade"
+			],
+			[
+				"ind",
+				"src/jade/index.jade"
+			],
+			[
+				"la",
+				"src/jade/layouts/layout-primary.jade"
+			],
+			[
+				"se",
+				"src/styl/settings.styl"
+			],
+			[
+				"footer",
+				"src/styl/modules/footer.styl"
+			],
+			[
+				"gri",
+				"src/styl/grid.styl"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"bow",
+				"build/bower.json"
+			],
 			[
 				"gul",
 				"build/gulp.coffee"
@@ -1052,20 +1206,12 @@
 				"src/jade/layouts/layout.jade"
 			],
 			[
-				"bow",
-				"build/tasks/bower.coffee"
-			],
-			[
 				"wor",
 				"kyla.sublime-workspace"
 			],
 			[
 				"k",
 				"kyla.sublime-project"
-			],
-			[
-				"la",
-				"src/jade/layouts/layout.jade"
 			],
 			[
 				"clea",
@@ -1140,10 +1286,6 @@
 				"src/styl/settings.styl"
 			],
 			[
-				"ind",
-				"src/jade/index.jade"
-			],
-			[
 				"ab",
 				"src/jade/about.jade"
 			],
@@ -1172,10 +1314,6 @@
 				"src/styl/style.styl"
 			],
 			[
-				"se",
-				"src/styl/settings.styl"
-			],
-			[
 				"pr",
 				"src/styl/modules/project.styl"
 			],
@@ -1186,10 +1324,6 @@
 			[
 				"home",
 				"src/jade/views/home.jade"
-			],
-			[
-				"ba",
-				"src/styl/base.styl"
 			],
 			[
 				"gr",
@@ -1474,30 +1608,6 @@
 			[
 				"lay",
 				"src/jade/layouts/layout-primary.jade"
-			],
-			[
-				"buton",
-				"src/styl/buttons.styl"
-			],
-			[
-				"bann",
-				"src/jade/modules/banner-perspectives-app.jade"
-			],
-			[
-				"add",
-				"src/svg/symbols/icon_add.svg"
-			],
-			[
-				"fla",
-				"src/jade/modules/flowbox-slider.jade"
-			],
-			[
-				"fl",
-				"src/styl/modules/flow-box.styl"
-			],
-			[
-				"even",
-				"src/coffee/events.coffee"
 			]
 		],
 		"width": 0.0
@@ -1520,7 +1630,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -1528,7 +1638,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 319.0,
+	"side_bar_width": 210.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
