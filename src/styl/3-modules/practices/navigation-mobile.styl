@@ -61,7 +61,7 @@
     width 100%
     background white
     box-shadow 0 4px 2px 0 rgba(0,0,0,0.15)
-    padding 10px 20px
+    padding 10px 0
     position absolute
     top -70px
     opacity 0
@@ -75,13 +75,16 @@
       z-index: 2
 
     +above(2)
-      padding: 15px 50px
+      padding: 15px 0
 
   .dropdown__element
-    margin-top: 10px
-    margin-bottom: 20px
+    padding 10px 20px 20px
     cursor pointer
     color blue
+    +above(2)
+      padding: 10px 50px 20px
+    &:hover
+      background gray
 
     +is(selected)
       font-family: museo-700
