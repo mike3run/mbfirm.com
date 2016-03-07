@@ -49,6 +49,7 @@
     position: relative
     padding: 30px
     transition: background 0.3s ease
+    aspect-ratio(506, 283, content)
 
     &:hover
       background linear-gradient(rgba(blue, 0.7), rgba(blue, 0.7)) , url('../img/hero2.jpg') no-repeat center / cover
@@ -67,7 +68,6 @@
       content ''
       width 77px
       height: 77px
-      background url('../img/play.png') no-repeat center / cover
       align(both)
       +above(2)
         width 54px
@@ -100,3 +100,22 @@
       +above(4)
         fs(1.8rem)
         line-height: (22/18)
+
+    &__play
+      content ''
+      width 77px
+      height: 77px
+      background url('../img/play.png') no-repeat center / cover
+      align(both)
+      +above(2)
+        width 54px
+        height: 54px
+      +above(3)
+        width 70px
+        height: 70px
+      +above(4)
+        width 82px
+        height: 82px
+      +above(5)
+        width 88px
+        height: 88px
