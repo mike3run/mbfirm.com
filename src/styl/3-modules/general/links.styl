@@ -2,86 +2,112 @@
     title: Links
     section: Typography
     example: |
-        a(href='#') Basic Link
-        a.button(href='#') Button Link
-        a.button--3d(href='#') Button 3D Link
-        a.button--clear(href='#') Clear Button Link
+        .links(style='background: #304760; padding: 20px;')
+          a(href='#') Basic Link
+          a.button(href='#') Button Link
+          a.button--3d(href='#') Button 3D Link
+          a.button--clear(href='#') Clear Button Link
+          a.button--arrow Learn More
+          a.button--arrow-clear Learn More
 ***/
 a
-    cursor pointer
-    text-decoration none
-    transition trns-default
-    color red
-    font-family museo-300
-    fs(1.6rem)
-    line-height (19/16)
-    &:focus
-        outline: 0
+  cursor pointer
+  text-decoration none
+  transition trns-default
+  color red
+  font-family museo-300
+  fs(1.6rem)
+  line-height (19/16)
+  &:focus
+      outline: 0
+  &:hover
+      color darken(red,40%)
+      text-decoration none
+  &:active
+      color red
+      transform scale(0.99)
+      transform-origin 50% 50%
+  &[disabled]
+      color gray !important
+      transform scale(1) !important
+  &:visited
+      color lighten(red,20%)
+      &:hover
+          color darken(red,40%)
+
+  &.button
+    background: red
+    color white
+    padding 12px 25px
+    border-radius: 100px
+    transition: trns-default
+    display: inline-block
     &:hover
-        color darken(red,40%)
-        text-decoration none
+      background darken(red, 20%)
     &:active
-        color red
-        transform scale(0.99)
-        transform-origin 50% 50%
-    &[disabled]
-        color gray !important
-        transform scale(1) !important
+      background red
     &:visited
-        color lighten(red,20%)
-        &:hover
-            color darken(red,40%)
+      color white
+      &:hover
+          color white
 
+    &--3d
+      @extend a.button
+      box-shadow: 0px 3px 0px 0px darken(red, 20%)
+      &:hover
+          box-shadow: 0px 3px 0px 0px darken(red, 40%)
+      &:active
+          box-shadow none
 
-    &.button
-        background: red
+    &--clear
+      @extend a.button
+      background transparent
+      border 1px solid white
+      &:hover
+          border 1px solid darken(red, 20%)
+      &:active
+          background red
+
+    &--arrow
+      background: red
+      color white
+      padding 12px 50px 12px 25px !important
+      border-radius: 100px
+      transition: trns-default
+      position: relative
+      &:hover
+        background darken(red,20%)
+        color white !important
+      &:active
+        background red
+      &:visited
+        background red
+
+      .right-arrow
+        width: 20px
+        height: 20px
+        align(vertical)
+        right 13%
+
+    &--arrow-clear
+      background: transparent
+      color white
+      padding 12px 50px 12px 25px !important
+      border-radius: 100px
+      border 1px solid white
+      transition: trns-default
+      position: relative
+      &:hover
+        background white
+        color red !important
+      &:active
+        background white
+        color red
+      &:visited
         color white
-        padding 12px 25px
-        border-radius: 100px
-        transition: trns-default
-        display: inline-block
-        &:hover
-            background darken(red, 20%)
-        &:active
-            background red
-        &:visited
-            color white
-            &:hover
-                color white
 
-        &--3d
-            @extend a.button
-            box-shadow: 0px 3px 0px 0px darken(red, 20%)
-            &:hover
-                box-shadow: 0px 3px 0px 0px darken(red, 40%)
-            &:active
-                box-shadow none
-
-        &--clear
-            @extend a.button
-            background transparent
-            border 1px solid white
-            &:hover
-                border 1px solid darken(red, 20%)
-            &:active
-                background red
-
-        &--arrow-clear
-            @extend a.button--clear
-            padding-right 60px !important
-            position relative
-
-        &--arrow
-            background: red
-            color white
-            padding 16px 75px 16px 40px
-            border-radius: 100px
-            transition: trns-default
-            position: relative
-            &:hover
-                background darken(red,20%)
-                color white
-            &:active
-                background red
-            &:visited
-                background red
+      .right-arrow
+        width: 20px
+        height 20px
+        align(vertical)
+        right 13%

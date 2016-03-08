@@ -5,9 +5,10 @@ section#pull-quotes
         blockquote 
           p.quote__text At Martzell and Bickford, we are not just lawyers. We pride ourselves in being three things: A friend, an advocate, and a fighter.
           footer.quote__author Scott Bickford, Cofounder & Partner
-          a.button--arrow-clear.quote__cta Learn More
-            .right-arrow
-              img(src='svg/right-arrow.svg', alt='Forward')
+          a.button--arrow-clear.quote__cta(href='#') Learn More
+            svg.right-arrow
+              use(xlink:href='#right-arrow')
+              
   .white-relative
     .partners    
       each partner, index in [{"name":"Scott R. Bickford","img":"scottbrickford","charge":"Partner"},{"name":"Larry J. Centola","img":"larrycentola","charge":"Partner"},{"name":"Spencer Ryan Doody","img":"spencerdoody"},{"name":"Roshawn Husband Donahue","img":"roshawnhusband"},{"name":"Neil F. Nazareth Esq.","img":"neilnazareth"},{"name":"Regina O. Matthews","img":"reginamatthews"},{"name":"Jason Zachary Landry","img":"jasonlandry"}] 

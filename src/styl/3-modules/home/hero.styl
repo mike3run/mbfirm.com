@@ -32,6 +32,7 @@
   a
     margin-top 30px
     padding 12px 25px
+    display: inline-block
     +above(4)
       margin-top: 45px
 
@@ -48,15 +49,15 @@
     margin-bottom: 0
     +e(slide)
       position relative
-      +m(1)
+      +m(0)
         background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero1.jpg') no-repeat center / cover
-      +m(2)
+      +m(1)
         background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero2.jpg') no-repeat center / cover
-      +m(3)
+      +m(2)
         background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero3.jpg') no-repeat center / cover
-      +m(4)
+      +m(3)
         background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero4.jpg') no-repeat center / cover
-      +m(5)
+      +m(4)
         background: linear-gradient(rgba(blue, 0.4), rgba(blue, 0.4)), url('../img/hero5.jpg') no-repeat center / cover
 
 
@@ -75,12 +76,6 @@
       +above(5)
         center(95rem)
         width: 95rem
-
-  .right-arrow
-      position: absolute
-      max-width: 25px
-      top 25%
-      right 10%
 
   // Slick Slider Settings
   .slick-slide

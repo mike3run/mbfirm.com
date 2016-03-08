@@ -1,7 +1,7 @@
 $('#hero .carousel').slick(
   arrows : false
   dots : true
-  autoplay : true
+  autoplay : false
   autoplaySpeed : 5000
 )
 
