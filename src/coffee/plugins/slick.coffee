@@ -36,6 +36,8 @@ $('#text-slider .slides').slick(
   arrows : false
   dots : true
   mobileFirst : true
+  prevArrow : '<div class="pagination__arrow pagination__arrow--previous pagination__arrow--blue slick-prev"><svg><use xlink:href="#arrow"></use></svg>'
+  nextArrow : '<div class="pagination__arrow pagination__arrow--blue slick-next"><svg><use xlink:href="#arrow"></use></svg></div>'
   responsive : [
     {
       breakpoint : 540
