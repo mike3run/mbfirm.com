@@ -6,7 +6,11 @@
   +above(3)
     display: none
 
-  h1
+  .title
+    background: blue
+    color white
+    padding: 90px 0
+  .center
     text-align: center
     fs(3.36rem)
     line-height: (41/33.6)
@@ -19,9 +23,10 @@
     margin-bottom: -5px
 
   .current-item
-    padding: 10px 20px
+    padding: 10px 7%
     position: relative
     cursor pointer
+    border-bottom: 1px solid blue-light
     &::before, &::after
       content ''
       display: block
@@ -35,19 +40,24 @@
     &::before
       transform: rotate(45deg)
       right 40px
+      +above(2)
+        right 90px
     &::after
       transform: rotate(-45deg)
       right 23px
+      +above(2)
+        right 73px
 
     +is(active)
       background gray
+      border-bottom: none
       &::before
         transform: rotate(-45deg)
       &::after
         transform: rotate(45deg)
 
     +above(2)
-      padding: 15px 50px
+      padding: 15px 14%
 
   .dropdown-container
     position: relative
@@ -58,7 +68,7 @@
   .dropdown
     display flex
     flex-direction column
-    width 100%
+    width 95%
     background white
     box-shadow 0 4px 2px 0 rgba(0,0,0,0.15)
     padding 10px 0
@@ -78,11 +88,11 @@
       padding: 15px 0
 
   .dropdown__element
-    padding 10px 20px 20px
+    padding 10px 7% 20px
     cursor pointer
     color blue
     +above(2)
-      padding: 10px 50px 20px
+      padding: 10px 14% 20px
     &:hover
       background gray
 
