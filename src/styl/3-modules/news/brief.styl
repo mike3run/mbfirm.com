@@ -11,19 +11,28 @@
   background: blue
   color white
   padding-top: 70px
-  padding-bottom: 280px
+  padding-bottom: 180px
   text-align: center
 
+  +above(3)
+    padding-bottom: 280px
   a
     font-family: museo-700
     color: white
-    fs(2.8rem)
-    line-height: (33/28)
+    fs(2.2rem)
+    line-height: (27/22)
+    +above(3)
+      fs(2.8rem)
+      line-height: (33/28)
 
   p
     font-family: museo-300
-    fs(2.8rem)
-    line-height: (33/28)
+    fs(2.2rem)
+    line-height: (27/22)
+    +above(3)
+      fs(2.8rem)
+      line-height: (33/28)
 
   .container
-    max-width: 53%
+    +above(3)
+      max-width: 622px
