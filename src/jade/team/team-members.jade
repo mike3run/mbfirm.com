@@ -1,6 +1,17 @@
-section#team-members
-  .container
-    each partner, index in [{"name":"Scott R. Bickford","img":"scottbrickford","charge":"Partner"},{"name":"Larry J. Centola","img":"larrycentola","charge":"Partner"},{"name":"Spencer Ryan Doody","img":"spencerdoody"},{"name":"Roshawn Husband Donahue","img":"roshawnhusband"},{"name":"Neil F. Nazareth Esq.","img":"neilnazareth"},{"name":"Jason Zachary Landry","img":"jasonlandry"}] 
+section#pull-quotes
+  //- .container
+  //-   each partner, index in [{"name":"Scott R. Bickford","img":"scottbrickford","charge":"Partner"},{"name":"Larry J. Centola","img":"larrycentola","charge":"Partner"},{"name":"Spencer Ryan Doody","img":"spencerdoody"},{"name":"Roshawn Husband Donahue","img":"roshawnhusband"},{"name":"Neil F. Nazareth Esq.","img":"neilnazareth"},{"name":"Jason Zachary Landry","img":"jasonlandry"}] 
+  //-     .partner(slide='#{index}')
+  //-       .partner__borders
+  //-         .partner__img
+  //-           img(src='img/#{partner.img}.jpg', alt='#{partner.name}')
+  //-         .partner__info
+  //-           span.partner__name= partner.name
+  //-           if partner.charge
+  //-             span.partner__title= partner.charge
+
+  .partners    
+    each partner, index in [{"name":"Scott R. Bickford","img":"scottbrickford","charge":"Partner"},{"name":"Larry J. Centola","img":"larrycentola","charge":"Partner"},{"name":"Spencer Ryan Doody","img":"spencerdoody"},{"name":"Roshawn Husband Donahue","img":"roshawnhusband"},{"name":"Neil F. Nazareth Esq.","img":"neilnazareth"},{"name":"Regina O. Matthews","img":"reginamatthews"},{"name":"Jason Zachary Landry","img":"jasonlandry"}] 
       .partner(slide='#{index}')
         .partner__borders
           .partner__img
@@ -9,3 +20,57 @@ section#team-members
             span.partner__name= partner.name
             if partner.charge
               span.partner__title= partner.charge
+              
+  .partners-desktop
+    
+    .partners-desktop__row
+      .partner.partner--vip(slide='0')
+        .partner__img
+          img(src='img/scottbrickford.jpg', alt='Scott R. Bickford')
+        .partner__info
+          span.partner__name Scott R. Bickford
+          span.partner__title Partner
+      
+      .partner.partner--vip(slide='1')
+        .partner__img
+          img(src='img/larrycentola.jpg', alt='Larry J. Centola')
+        .partner__info
+          span.partner__name Larry J. Centola
+          span.partner__title Partner
+    
+    .partners-desktop__row
+      
+      .partner.partner(slide='2')
+        .partner__img
+          img(src='img/spencerdoody.jpg', alt='Spencer Ryan Doody')
+        .partner__info
+          span.partner__name Spencer Ryan Doody
+          
+      
+      .partner.partner(slide='3')
+        .partner__img
+          img(src='img/roshawnhusband.jpg', alt='Roshawn Husband Donahue')
+        .partner__info
+          span.partner__name Roshawn Husband Donahue
+      
+      
+      .partner.partner(slide='4')
+        .partner__img
+          img(src='img/neilnazareth.jpg', alt='Neil F. Nazareth Esq.')
+        .partner__info
+          span.partner__name Neil F. Nazareth Esq.
+
+    .partners-desktop__row
+
+      .partner.partner(slide='5')
+        .partner__img
+          img(src='img/reginamatthews.jpg', alt='Regina O. Matthews')
+        .partner__info
+          span.partner__name Regina O. Matthews
+          
+      
+      .partner.partner(slide='6')
+        .partner__img
+          img(src='img/jasonlandry.jpg', alt='Jason Zachary Landry')
+        .partner__info
+          span.partner__name Jason Zachary Landry
