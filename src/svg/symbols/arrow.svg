@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="28px" viewBox="0 0 27 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>forward-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Svgs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="svgs" transform="translate(-431.000000, -368.000000)" fill="currentColor">
+            <g id="forward-arrow-red" transform="translate(431.000000, 368.000000)">
+                <path d="M25.1803363,13.2763235 L0.119114625,13.2763235 L0.119114625,14.3057353 L25.1803363,14.3057353 C25.1325338,14.3919747 25.0723013,14.4720001 25.000527,14.5435294 L12.6744769,26.8275 L13.4047642,27.5552941 L25.7308142,15.2713235 C26.1274625,14.8760294 26.3454124,14.35 26.3454124,13.7910294 C26.3454124,13.2320588 26.1274625,12.7060294 25.7308142,12.3107353 L13.4047642,0.0267647059 L12.6744769,0.754558824 L25.000527,13.0385294 C25.0723013,13.1100587 25.1325338,13.1900842 25.1803363,13.2763235 Z" id="forward-arrow"></path>
+            </g>
+        </g>
+    </g>
+</svg>

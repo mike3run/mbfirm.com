@@ -1,8 +1,9 @@
 .container
   .pagination
     a.pagination__previous(href='#')
-      .pagination__arrow
-        img(src='svg/back-arrow-red.svg', alt='back arrow')
+      .pagination__arrow.pagination__arrow--previous
+        svg
+          use(xlink:href='#arrow')
       span.pagination__text.pagination__text--previous Previous Article
       
     h1.pagination__title Related Articles
@@ -10,4 +11,5 @@
     a.pagination__next(href='#')
       span.pagination__text.pagination__text--next Next Article
       .pagination__arrow
-        img(src='svg/forward-arrow-red.svg', alt='forward arrow')
+        svg
+          use(xlink:href='#arrow')

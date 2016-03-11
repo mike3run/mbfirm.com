@@ -1,10 +1,12 @@
 .pagination
   a.pagination__previous(href='#')
-    .pagination__arrow
-      img(src='svg/back-arrow-red.svg', alt='back arrow')
-    span.pagination__text.pagination__text--previous Our Practices
+    .pagination__arrow.pagination__arrow--previous
+      svg
+        use(xlink:href='#arrow')
+    span.pagination__text.pagination__text--previous Our<br>Practices
   
   a.pagination__next(href='#')
-    span.pagination__text.pagination__text--next Meet the team
+    span.pagination__text.pagination__text--next Meet <br>the team
     .pagination__arrow
-      img(src='svg/forward-arrow-red.svg', alt='forward arrow')
+      svg
+        use(xlink:href='#arrow')

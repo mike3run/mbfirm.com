@@ -4,14 +4,16 @@
   example: |
     .pagination
       a.pagination__previous(href='#')
-        .pagination__arrow
-          img(src='svg/back-arrow-red.svg', alt='back arrow')
-        span.pagination__text.pagination__text--previous Our Practices
+        .pagination__arrow.pagination__arrow--previous
+          svg
+            use(xlink:href='#arrow')
+        span.pagination__text.pagination__text--previous Our<br>Practices
 
       a.pagination__next(href='#')
-        span.pagination__text.pagination__text--next Meet the team
+        span.pagination__text.pagination__text--next Meet <br>the team
         .pagination__arrow
-          img(src='svg/forward-arrow-red.svg', alt='forward arrow')
+          svg
+            use(xlink:href='#arrow')
 ***/
 
 
@@ -23,12 +25,10 @@
     padding: 40px 45px
 
   &__previous
-    max-width: 136px
     display: flex
     align-items: center
 
   &__next
-    max-width: 136px
     display: flex
     align-items: center
 
@@ -55,5 +55,22 @@
       text-align: right
 
   &__arrow
-    min-width: 54px
-    max-width: 54px
+    width: 54px
+    height: 54px
+    display: flex
+    justify-content: center
+    align-items: center
+    border 1px solid red
+    border-radius: 50%
+    color red
+    transition: trns-default
+    &:hover
+      background red
+      color white
+
+    &--previous
+      transform: rotate(180deg)
+
+    svg
+      width: 27px
+      height: 27px
